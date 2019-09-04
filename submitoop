@@ -1,0 +1,15 @@
+#!/bin/bash
+#this command takes 4 arguments
+#1. Prof First Name 2. Prof Last Name 3. Section Number 
+#4. Workshop week Number 
+/bin/echo -n "Please enter Prof's First Name: "
+read fname
+/bin/echo -n "Please enter Prof's Last Name: "
+read lname
+/bin/echo -n "Please enter Section code: "
+read sec 
+/bin/echo -n "Please enter Workshop number: "
+read week
+
+"~$fname.$lname/submit 244$sec""_w$week""_lab"
+
