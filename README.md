@@ -3,7 +3,7 @@
 
 Hey, so my name is Fernando.
 
-As of the latest update I'm currently a Seneca Student For Computer Programming and Analysis.
+As of the latest update I'm currently a Seneca Student for Computer Programming and Analysis.
 This repository is mearly for codes that I do when I'm bored and feel like building something new. 
 A lot of these aren't very complex but they are helpful. I have some bash scritps that are very helpful during School.
 
