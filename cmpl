@@ -1,0 +1,16 @@
+#!/bin/bash
+
+/bin/echo -n This program will compile any number of files that you need for C++$'\n'
+/bin/echo
+/bin/echo -n Please provide me with the number of files:
+read NoOfFiles
+/bin/echo -n Please enter Program Name:
+read ProName
+for (( c=1; c<=NoOfFiles; c++ ))
+do  
+   echo "$c.:" 
+   read fName
+   cmplFiles+="${fName} "
+done
+
+g++ $cmplFiles -Wall -std=c++11 -o $ProName
