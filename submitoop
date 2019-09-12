@@ -1,5 +1,8 @@
 #!/bin/bash
 #this command takes 4 arguments
+#minimize to one argument
+#let collaborators edit code to thier needs 
+#hope that workss
 #1. Prof First Name 2. Prof Last Name 3. Section Number 
 #4. Workshop week Number 
 /bin/echo -n "Please enter Prof's First Name: "
