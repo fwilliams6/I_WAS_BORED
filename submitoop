@@ -1,18 +1,26 @@
 #!/bin/bash
-#this command takes 4 arguments
-#minimize to one argument
-#let collaborators edit code to thier needs 
-#hope that workss
-#1. Prof First Name 2. Prof Last Name 3. Section Number 
-#4. Workshop week Number 
-/bin/echo -n "Please enter Prof's First Name: "
-read fname
-/bin/echo -n "Please enter Prof's Last Name: "
-read lname
-/bin/echo -n "Please enter Section code: "
-read sec 
-/bin/echo -n "Please enter Workshop number: "
+#This is a Submitter Command creator
+#Change the parameters to your profs on the code
+#You will need to copy and paste the command and hit enter to start submitter
+#This is just so you don't have to type the long command each time.
+/bin/echo "This is a Simple Program that will create the submission link."
+/bin/echo "Copy and paste the link to submit"
+/bin/echo -n "Please enter the Workshop week you wish to submit(include the zero):"
 read week
+/bin/echo "Please select submittion Type: "
+/bin/echo "1.in_Lab 2. at_home 3.DIY"
+/bin/echo -n ">"
+read slct #select
 
-"~$fname.$lname/submit 244$sec""_w$week""_lab"
+case $slct in 
+    1)
+        echo  "~profname.proflastname/submit 244/NXX/WS$week/in_lab"
+        ;;
+    2)
+        echo "~profname.proflastname/submit 244/NXX/WS$week/at_home"
+        ;;
+    3)
+        echo "~profname.proflastname/submit 244/NXX/WS$week/DIY"
+        ;;
+esac
 
